@@ -54,6 +54,18 @@ you directly without going through an agent persona.
 | `new-project-setup` | Scaffolds a new client/project folder from `clients/_template/` |
 | `status-report-generator` | One-page client/internal status updates |
 | `meeting-notes-action-tracker` | Structured meeting notes with owned, dated action items |
+| `contract-and-proposal-writer` | NDAs, MSAs, and jurisdiction-specific (US/EU/UK/DACH) contract clauses |
+| `revenue-operations` | Agency's own new-business pipeline coverage and forecast accuracy (not client work) |
+| `sales-engineer` | RFP coverage-gap analysis and competitive positioning for formal, competitive pitches |
+| `customer-success-manager` | Retainer client health scoring, churn/non-renewal risk, expansion opportunities |
+
+The last four are adapted from a third-party community repo, not written from scratch for this
+agency — see `.claude/skills/THIRD-PARTY-NOTICES.md` for attribution and what was changed.
+`contract-and-proposal-writer` is a clean fit as imported; the other three were originally written
+for B2B SaaS growth teams (ARR, CAC:LTV, product-usage churn scoring) and have been reframed
+around this business's actual shape — reference their SKILL.md "adapted from" notes before relying
+on them for something high-stakes, since some of the underlying benchmarks are carried over as
+heuristics rather than agency-validated numbers.
 
 Plus two installed plugins (project-scoped, see `.claude/settings.json`):
 - **`claude-md-management`** — audits/improves this file and any nested `CLAUDE.md` files over time
